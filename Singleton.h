@@ -24,5 +24,4 @@ public:
     std::string name;
 };
 
-
 #endif //SHAREDDATA_SINGLETON_H

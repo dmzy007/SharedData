@@ -1,10 +1,17 @@
 #include <iostream>
 #include "Singleton.h"
+#include "Test.h"
+#include "Test1.h"
 
 int main()
 {
-    Singleton &OnlySingleton = Singleton::GetInstance();
-    OnlySingleton.name = "OnlySingleton";
-    std::cout << OnlySingleton.name << std::endl;
+    Test w;
+    Test1 v;
+    w.SetName("aaa");
+    w.GetName();
+    v.SetName("bbb");
+    v.GetName();
+    w.SetName("ccc");
+    w.GetName();
     return 0;
 }
